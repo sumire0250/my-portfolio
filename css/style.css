@@ -179,6 +179,8 @@ header {
 
 /*メイン画像左下のテキストブロック*/
 .mainimg .text {
+	--title-color:#ffffff;
+	color:#ffffff;
 	position: absolute;
 	left: 1rem;			/*メイン画像ブロックの左からの配置場所指定。*/
 	bottom: -2rem;		/*メイン画像ブロックの下からの配置場所指定。マイナスがついているので本来の向きとは逆になります。*/
