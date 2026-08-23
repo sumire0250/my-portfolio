@@ -283,9 +283,21 @@ main ul,main ol {
 	font-size: 0.8rem;	/*文字サイズ80%*/
 }
 
-/*画像ブロック*/
-.list2 figure {
+/*画像ブロック（編集）*/
+/*.list2 figure {
 	margin-bottom: 1rem;	/*画像の下に1文字分の余白を空ける*/
+.list2 figure {
+    margin-bottom: 1rem;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+}
+
+.list2 figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
 }
 
 
@@ -545,3 +557,95 @@ footer small {
 .large-screen .ws {width: 50%;}
 .large-screen .sh {display: none;}
 .large-screen .pc {display: block;}
+
+
+/* WORKS
+---------------------------------------------------------------------------*/
+
+.works {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 4rem;
+}
+
+.work {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+}
+
+.work figure {
+    width: 40%;
+    max-width: 400px;
+    margin: 0 auto 1.5rem;
+}
+
+.work figure img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+.work:hover figure img {
+    transform: scale(1.03);
+}
+
+.work-text h4 {
+    margin-bottom: 0.5rem;
+}
+
+.work-text p {
+    margin: 0;
+}
+
+/* 作品詳細ページ
+---------------------------------------------------------------------------*/
+
+.work-detail-image {
+    width: 80%;
+    max-width: 900px;
+    margin: 0 auto 4rem;
+}
+
+.work-detail-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* 動画
+---------------------------------------------------------------------------*/
+
+.work-video {
+    width: 80%;
+    max-width: 900px;
+    margin: 0 auto 4rem;
+}
+
+.work-video video {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+/* 作品画像スライドショー
+---------------------------------------------------------------------------*/
+
+.work-slideshow {
+    width: 80%;
+    max-width: 900px;
+    aspect-ratio: 16 / 9;
+    margin: 0 auto 4rem;
+    overflow: hidden;
+}
+
+.work-slideshow img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: contain;
+    opacity: 1;
+    transition: opacity 0.8s ease;
+}

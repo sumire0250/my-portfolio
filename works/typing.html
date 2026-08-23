@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+<meta charset="UTF-8">
+<title>タイピングゲーム | MyPortfolio</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="作品の簡単な説明">
+
+<link rel="stylesheet" href="../css/style.css">
+
+</head>
+
+<body>
+
+<div id="container">
+
+<!-- ヘッダー -->
+<header>
+
+<h1 id="logo">
+<a href="../index.html">
+<img src="../images/my_logo1.png" alt="MyPortfolio">
+</a>
+</h1>
+
+</header>
+
+
+<!-- メインコンテンツ -->
+<div id="contents">
+
+<main>
+
+<section>
+
+<h2>タイピングゲーム</h2>
+
+<!-- メイン画像
+<figure class="work-detail-image">
+<img src="../images/typing.png" alt="作品名">
+</figure> -->
+
+<div class="work-video">
+    <video autoplay muted loop playsinline>
+        <source src="../videos/typing_play.mp4" type="video/mp4">
+        お使いのブラウザでは動画を再生できません。
+    </video>
+</div>
+
+
+<!-- 概要 -->
+<h3>Overview</h3>
+
+<p>
+Pythonで制作したコンソール型のタイピングゲームです。<br>
+
+1人でプレイするモードと2人で対戦するモードがあり、英語・日本語の単語を使ってタイピングを行うことができます。<br>
+
+また、ゲームの結果をファイルに保存したり、オリジナルの単語を追加したりすることもできます。
+</p>
+
+
+<!-- 制作情報 -->
+<h3>Information</h3>
+
+<table class="ta1">
+
+<tr>
+<th>作品名</th>
+<td>タイピングゲーム</td>
+</tr>
+
+<tr>
+<th>制作期間</th>
+<td>約一ヶ月</td>
+</tr>
+
+<tr>
+<th>使用技術</th>
+<td>Python / VS Code</td>
+</tr>
+
+
+</table>
+
+
+<!-- 主な機能 -->
+<h3>Features</h3>
+
+<ul>
+<li>1人プレイ</li>
+<li>2人プレイ</li>
+<li>単語管理</li>
+<li>結果確認</li>
+</ul>
+
+
+<!-- 制作の工夫 -->
+<h3>Points</h3>
+
+<p>
+機能ごとにPythonファイルを分け、処理を整理しました。<br>
+
+例えば、1人プレイ・2人プレイ・単語管理・結果表示などをそれぞれ別のファイルに分けています。<br>
+
+</p>
+
+<p>
+また、単語の読み込みやユーザー入力のチェックなど、複数の場所で使用する処理は関数としてまとめ、他のファイルから利用できるようにしました。
+</p>
+
+
+<!-- 制作してみて -->
+<h3>Reflection</h3>
+
+<p>
+複数のPythonファイルを連携させる際に、ファイルの構成やモジュールの読み込みについて理解する必要があり、難しかったです。<br>
+</p>
+<p>
+また、ゲーム結果をテキストファイルに保存する処理を実装することで、Pythonによるファイルの読み書きについて学びました。<br>
+</p>
+
+<!-- リンク -->
+<h3>Links</h3>
+
+<p>
+<a href="https://github.com/sumire0250/typing_game" target="_blank" rel="noopener">
+GitHubでソースコードを見る
+</a>
+</p>
+
+<!-- <p>
+<a href="デモサイトのURL" target="_blank" rel="noopener">
+実際にサイトを見る
+</a>
+</p> -->
+
+
+<!-- 戻る -->
+<p class="c mt3rem">
+<a href="../index.html">← Worksに戻る</a>
+</p>
+
+</section>
+
+</main>
+
+</div>
+
+
+<!-- フッター -->
+<footer>
+
+<small>
+Copyright© MyPortfolio All Rights Reserved.
+</small>
+
+</footer>
+
+
+<!-- Template Party -->
+<span class="pr">
+<a href="https://template-party.com/" target="_blank" rel="noopener nofollow">
+《Web Design:Template-Party》
+</a>
+</span>
+
+
+</div>
+
+</body>
+</html>
