@@ -1,6 +1,6 @@
 const images = [
     "../images/my_workout.png",
-    "../images/IMG_E0636.jpg"
+    "../images/IMG_E0636.JPG"
 ];
 
 let current = 0;
